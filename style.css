@@ -30,6 +30,7 @@ html {
     font-family: var(--font);
     font-size: 16px;
     scroll-behavior: smooth;
+    /* overflow-x: hidden; */
 }
 
 *,
@@ -113,11 +114,11 @@ p {
 }
 
 .carousel .slides {
-    /* +100% de ancho por cada carrusel */
     display: flex;
     list-style: none;
     padding-left: 0;
-    width: 400%;
+    /* +100% de ancho por cada carrusel */
+    width: 200%;
     transition: transform 0.5s ease-in-out;
     /* animation: carousel-slide 12s ease-in-out; */
 }
@@ -127,7 +128,7 @@ p {
 }
 
 #slide-2:checked ~ .slides {
-    transform: translateX(-25%);
+    transform: translateX(-50%);
 }
 #slide-3:checked ~ .slides {
     transform: translateX(-50%);
